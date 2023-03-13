@@ -9,7 +9,7 @@ class departmentController extends Controller
 {
     function getAllDepartmentDatas(){
         return view('department',[
-            'department_name'=>DepartTitle::all()
+            'department_name'=>department::all()
         ]);
     }
     function saveDepartTitle(Request $request){

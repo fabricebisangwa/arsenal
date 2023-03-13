@@ -22,9 +22,7 @@ Route::get('/table',[App\Http\Controllers\JobListController::class,'getAllJobDat
 Route::post('/JobSolvit/save',[App\Http\Controllers\JobListController::class,'saveJobTitle'] );
 Route::post('/DepartSolvit/save',[App\Http\Controllers\departmentController::class,'saveDepartTitle'] );
 
-Route::get('/department', function () {
-    return view('department');
-});
+
 Route::get('/user', function () {
     return view('user');
 });

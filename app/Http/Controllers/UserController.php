@@ -14,7 +14,7 @@ class UserController extends Controller
 {
     function getAlldata(){
         return view('welcome',[
-         'users'=>User::all(),
+          'users'=>User::all(),
           'usercount'=>User::count(),
           'department_count'=>Department::count(),
           'employee_count'=>employee::count(),
