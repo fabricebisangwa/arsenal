@@ -43,14 +43,14 @@
                         <p>Employee</p>
                     </a>
                 </li>
-                <!--<li class="{{Request::is('maps')?'active':''}}">
-                    <a href="/maps">
-                        <i class="ti-map"></i>
-                        <p>Maps</p>
+                <li class="{{Request::is('maps')?'active':''}}">
+                    <a href="/attendance">
+                        <i class="fas fa-clock"></i>
+                        <p>Attendance</p>
                     </a>
                 </li>
-                <li>
-                    <a href="/notifications">
+                <!--<li>
+                  s  <a href="/notifications">
                         <i class="ti-bell"></i>
                         <p>Notifications</p>
                     </a>
