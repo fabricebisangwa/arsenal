@@ -1,8 +1,6 @@
 @extends('layouts.master')
 
 @push('styles')
-
-@endpush
 @section('breadcumb','Dashboard')
 @section('contents')
 <div class="content">

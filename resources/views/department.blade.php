@@ -18,8 +18,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="title">Department</label>
-                                            <input id="title" type="text" class="form-control border-input" name="department">
+                                            <label for="department">Department</label>
+                                            <input id="department" type="text" class="form-control border-input" name="department">
                                         </div>
                                     </div>
                                 </div>
@@ -55,19 +55,19 @@
                                     <th>options</th>
                                 </thead>
                                 <tbody>
-                                    @foreach ($department_name as $key=> $solvedepartment)
+                                    @foreach ($department_name as $key=> $departsave)
                                         <tr>
                                             <td>{{$key+1}}</td>
-                                            <td> {{ $solvedepartment->department }} </td>
-                                            <td> {{ $solvedepartment->description }} </td>
+                                            <td> {{ $departsave->department_name }} </td>
+                                            <td> {{ $departsave->description }} </td>
                                             <td>
-                                                <a href="/jobTitle/edit/{{Crypt::encrypt($job_title->id)}}" style="color:blue">edit</a> |
-                                                <a href="#!" onclick="document.getElementById('delete-{{$job_title->id}}').submit()"
+                                                <a href="/jobTitle/edit/{{Crypt::encrypt($departsave->id)}}" style="color:blue">edit</a> |
+                                                <a href="#!" onclick="document.getElementById('delete-{{$departsave->id}}').submit()"
                                                              style="color:red">Delete</a>
-                                                <form action="/jobTitle/delete/{{Crypt::encrypt($job_title->id)}}"
+                                                <form action="/jobTitle/delete/{{Crypt::encrypt($departsave->id)}}"
                                                       method="post"
                                                       onsubmit="return confirm('are you sure?')"
-                                                      id="delete-{{$job_title->id}}"
+                                                      id="delete-{{$departsave->id}}"
                                                       >
                                                       @csrf
                                                       @method('DELETE')

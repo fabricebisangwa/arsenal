@@ -5,11 +5,12 @@ use App\Models\Department;
 
 use Illuminate\Http\Request;
 
+
 class departmentController extends Controller
 {
     function getAllDepartmentDatas(){
         return view('department',[
-            'department_name'=>department::all()
+            'department_name'=>Department::all()
         ]);
     }
     function saveDepartTitle(Request $request){

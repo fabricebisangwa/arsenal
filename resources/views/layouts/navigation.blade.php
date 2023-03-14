@@ -7,7 +7,7 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
+                <a href="#" class="simple-text">
                     HRMS
                 </a>
             </div>
@@ -25,8 +25,8 @@
                         <p>User Profile</p>
                     </a>
                 </li>
-                <li class="{{Request::is('table')?'active':''}}">
-                    <a href="/table">
+                <li class="{{Request::is('job_insert')?'active':''}}">
+                    <a href="/job_insert">
                         <i class="ti-view-list-alt"></i>
                         <p>Job titles</p>
                     </a>
