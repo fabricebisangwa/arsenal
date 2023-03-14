@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('firstname',50);
             $table->string('lastname',50);
-            $table->date('dete_of_birth');
+            $table->date('date_of_birth');
             $table->foreignId('job_title_id')->constrained('jobtitles','id');
             $table->foreignId('department_id')->constrained('departments','id');
             

@@ -19,8 +19,10 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="title">Title</label>
-                                                <input id="title" type="hidden" class="form-control border-input" name="job_title_id" value="{{Crypt::encrypt($job_title->id)}}" name="title">
-                                                <input id="title" type="text" class="form-control border-input" value="{{$job_title->job_title_name}}" name="title">
+                                                <input id="title" type="hidden" class="form-control border-input" name="department_id" value="{{Crypt::encrypt($depart->id)}}" name="title">
+                                                <input id="title" type="text" class="form-control border-input" value="{{$depart->department_name}}" name="update_department">
+                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -28,7 +30,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="description">Description</label>
-                                                <textarea id="description" rows="5" class="form-control border-input" name="description">{{$job_title->description}}</textarea>
+                                                <textarea id="description" rows="5" class="form-control border-input" name="update_description">{{$depart->description}}</textarea>
                                             </div>
                                         </div>
                                     </div>
